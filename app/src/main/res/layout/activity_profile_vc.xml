@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileVC">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffffff"
+        android:padding="20dp"
+        android:src="@drawable/wakeepay_logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:background="#3999d9"
+        android:padding="5dp"
+        android:text="PROFILE"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/ic_firstname"
+        android:hint="NAME"
+        android:textColorHint="#796868"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/ic_email"
+        android:hint="EMAIL ID"
+        android:textColorHint="#796868"
+        android:textColor="#000000"/>
+
+  <EditText
+    android:id="@+id/mobile"
+    android:layout_width="300dp"
+    android:layout_height="45dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:background="#ffffff"
+    android:drawableLeft="@drawable/ic_phone"
+    android:hint="MOBILE NO."
+      android:textColorHint="#796868"
+      android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/ic_calendar"
+        android:hint="DOB"
+        android:textColorHint="#796868"
+        android:textColor="#000000"
+        android:focusable="false"/>
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_button"
+        android:text="UPDATE"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

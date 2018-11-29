@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/barcode_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BarCodeVC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#b1e0e2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffffff"
+        android:padding="20dp"
+        android:src="@drawable/wakeepay_logo" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="0dp"
+        android:background="#3999d9"
+        android:padding="5dp"
+        android:text="Scan QR"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+        <SurfaceView
+            android:id="@+id/camera"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:background="@drawable/qr_code_reader_square"/>
+
+
+        <TextView
+            android:id="@+id/text_result"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="20dp"
+            android:hint="Mercahnt Id"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rounded_button"
+            android:text="SUBMIT"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:hint=""
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

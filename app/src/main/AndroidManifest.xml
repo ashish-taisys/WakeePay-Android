@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wakeepay.taisys.wakeepay">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginVC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignUpVC"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".VerifyOtpVC" />
+        <activity android:name=".DashboardVC" />
+        <activity android:name=".SelectPaymentVC" />
+        <activity android:name=".PayeeDetailVC" />
+        <activity android:name=".ProfileVC" />
+        <activity android:name=".MerchantDashVC" />
+        <activity android:name=".BarCodeVC" />
+        <activity android:name=".AmountDetailVC" />
+        <activity android:name=".PaymentSuccess" />
+        <activity android:name=".PaymentError" />
+        <activity android:name=".MerchantProfileVC" />
+        <activity android:name=".MerchantQrVC" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_SL96NBwpjbS4vn" />
+
+        <activity android:name=".ForgotPasswordVC" />
+        <activity android:name=".CreatePasswordVC" />
+        <activity android:name=".ForgotConfirmOtpVC" />
+        <activity android:name=".TermAndConditionVC" />
+        <activity android:name=".TransactionListVC" />
+        <activity android:name=".SearchTransactionVC" />
+        <activity android:name=".MainActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WakeePay</string>
+    <string name="payment_detail">PAYMENT dETAIL</string>
+    <string name="result_text_default">Please focus camera to QR Code</string>
+    <string name="your_string"><u>Terms And Condition</u></string>
+    <string name="click_here_to_read_all_the_terms_conditions"><![CDATA[Terms & Conditions]]></string>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1d8d8"
+    android:orientation="vertical"
+    tools:context=".DashboardVC">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#ffffff"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:src="@drawable/wakeepay_logo" />
+
+        <ImageButton
+            android:id="@+id/logout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:background="#ffffff"
+            android:src="@drawable/logout" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:background="#050986"
+        android:padding="5dp"
+        android:text="DASHBOARD"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/payment"
+        android:layout_width="280dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:text="PAYMENT"
+        android:layout_gravity="center"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#3999d9"
+        />
+
+    <Button
+        android:id="@+id/profile"
+        android:layout_width="280dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:text="PROFILE"
+        android:layout_gravity="center"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#3999d9"/>
+
+    <Button
+        android:id="@+id/transaction"
+        android:layout_width="280dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:text="TRANSACTIONS"
+        android:layout_gravity="center"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#050986"/>
+
+
+</LinearLayout>

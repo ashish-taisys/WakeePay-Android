@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/texta"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Transferred To:-"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        />
+
+<TextView
+    android:id="@+id/receivedFrom"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/texta"
+    android:text="9891747698"
+    android:textSize="16dp"
+    android:textStyle="bold"
+    android:textColor="#1fa313"
+    />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_toEndOf="@+id/receivedFrom"
+        android:text="₹450"
+        android:textAlignment="textEnd"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:layout_toRightOf="@+id/receivedFrom"
+        android:textColor="#0d9fd9"
+        />
+
+
+    <TextView
+        android:id="@+id/textb"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/receivedFrom"
+        android:text="Trans. Id:-"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:id="@+id/transactionId"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textb"
+        android:text="fnke65151510"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#1fa313"
+        />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/transaction"
+        android:layout_below="@+id/amount"
+        android:layout_gravity="end"
+        android:layout_toEndOf="@+id/receivedFrom"
+        android:text="Date:-02/11/2018"
+        android:textAlignment="textEnd"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/receivedFrom"
+        android:textColor="#7c7b7b"
+        />
+
+
+    <TextView
+        android:id="@+id/textc"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/transactionId"
+        android:text="Comment:-"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textc"
+        android:text="Transferring amount"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#1fa313"
+        />
+
+    <TextView
+        android:id="@+id/paymentstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/comment"
+        android:layout_below="@+id/date"
+        android:layout_gravity="end"
+        android:layout_toEndOf="@+id/comment"
+        android:layout_toRightOf="@+id/comment"
+        android:text="Status- SUCCESS"
+        android:textAlignment="viewEnd"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#11bc1a"
+        />
+
+
+</RelativeLayout>

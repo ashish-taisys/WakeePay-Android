@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".SearchTransactionVC">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_back"
+        />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="2dp">
+
+        <EditText
+            android:id="@+id/enterText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:inputType="text"
+            android:hint="Enter Mobile No. to search"
+            android:singleLine="true"
+            android:backgroundTint="#10b3d7"
+            android:imeOptions="actionSearch"
+             />
+
+        <Button
+            android:id="@+id/clearText"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/ic_clear"
+            />
+
+    </FrameLayout>
+
+
+
+</LinearLayout>
+
+    <ListView
+        android:id="@+id/searchList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    <TextView
+        android:id="@+id/empty"
+        android:text="NO TRANSACTIONS FOUND!"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textColor="#848484"
+        style="@android:style/TextAppearance.Large"
+        android:gravity="center">
+    </TextView>
+</LinearLayout>
