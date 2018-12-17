@@ -14,8 +14,8 @@ import java.net.URLEncoder;
 
 public class ApiClient {
     //String baseUrl = "http://192.168.1.100:8888";
-//     String baseUrl = "http://122.176.40.215:8888";
-    String baseUrl = "http://192.168.1.13:9000";
+     String baseUrl = "http://122.176.40.215:8888";
+//    String baseUrl = "http://192.168.1.13:9000";
     public String updateCustomer(String firstName, String email, String mobileNo,String password, String type) {
         try {
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
@@ -176,7 +176,8 @@ public class ApiClient {
                 br.close();
                 Log.i("output.toString() ", output.toString());
                 return output.toString();
-            } else {
+            }
+            else {
                 return "A connection to the remote server could not be stablished.";
             }
         } catch (Exception e) {

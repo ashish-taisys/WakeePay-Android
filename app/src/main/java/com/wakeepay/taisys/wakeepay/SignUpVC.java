@@ -21,6 +21,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -40,7 +41,8 @@ import java.util.Map;
 
 public class SignUpVC extends Activity{
     public EditText first_name,email_id,mobile_no,pass;
-    public Button merchant,others,submit,popupBtn;
+    public Button merchant,others,submit;
+    public TextView popupBtn;
     public CheckBox CheckBtn;
     String type = "";
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
@@ -72,7 +74,7 @@ public class SignUpVC extends Activity{
         others = (Button) findViewById(R.id.others);
         submit = (Button) findViewById(R.id.submit);
         CheckBtn = (CheckBox) findViewById(R.id.checkbox);
-        popupBtn = (Button) findViewById(R.id.termcondition);
+        popupBtn = (TextView) findViewById(R.id.termcondition);
 
         Checked = "false";
 

@@ -5,11 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#ffffff"
     tools:context=".MerchantQrVC">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="65dp"
         android:background="#ffffff"
         android:padding="20dp"
         android:src="@drawable/wakeepay_logo" />
@@ -19,13 +20,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="5dp"
-        android:background="#3999d9"
+        android:background="#ffffff"
         android:padding="5dp"
         android:text="MERCHANT QR"
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textColor="#ffffff"
-        android:textSize="30dp"
+        android:textColor="#06429D"
+        android:textSize="22dp"
         android:textStyle="bold" />
 
 

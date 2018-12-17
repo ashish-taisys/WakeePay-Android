@@ -10,7 +10,7 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="65dp"
         android:background="#ffffff"
         android:padding="20dp"
         android:src="@drawable/wakeepay_logo" />
@@ -20,13 +20,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="5dp"
-        android:background="#3999d9"
+        android:background="#ffffff"
         android:padding="5dp"
         android:text="@string/payment_detail"
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textColor="#ffffff"
-        android:textSize="30dp"
+        android:textColor="#06429D"
+        android:textSize="22dp"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -43,11 +43,11 @@
             android:hint="Total Amount"
             android:padding="2dp"
             android:layout_marginLeft="20dp"
-            android:textSize="25dp"
+            android:textSize="15dp"
             android:textStyle="bold"
             android:layout_gravity="center_vertical"
             android:textAlignment="center"
-            android:textColorHint="#000000"
+            android:textColorHint="#06429D"
             />
 
 
@@ -58,8 +58,8 @@
             android:hint="Rs.214.9"
             android:padding="2dp"
             android:layout_marginRight="20dp"
-            android:textColorHint="#000000"
-            android:textSize="20dp"
+            android:textColorHint="#06429D"
+            android:textSize="15dp"
             android:layout_gravity="center_vertical"
             android:textStyle="bold"
             android:drawableRight="@drawable/ic_drop_down"
@@ -73,145 +73,147 @@
         android:orientation="vertical"
         >
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center">
-
-        <TextView
-            android:layout_width="160dp"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Amount"
-            android:padding="2dp"
-            android:layout_marginLeft="20dp"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:layout_gravity="center_vertical"
-            android:textColorHint="#000000"
-            android:textAlignment="center"
-            />
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:hint="Amount"
+                android:padding="2dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:textColorHint="#06429D"
+                android:textAlignment="center"
+                />
 
 
-        <TextView
-            android:id="@+id/amount"
-            android:layout_width="160dp"
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:hint="Rs.50000"
+                android:padding="2dp"
+                android:layout_marginRight="20dp"
+                android:textColorHint="#06429D"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_gravity="center_vertical"
+                />
+
+
+
+        </LinearLayout>
+
+        <!--<view-->
+        <!--android:layout_width="350dp"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:background="#000000"-->
+        <!--android:layout_gravity="center"-->
+        <!--&gt;</view>-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Rs.50000"
-            android:padding="2dp"
-            android:layout_marginRight="20dp"
-            android:textColorHint="#000000"
-            android:textSize="18dp"
-            android:textStyle="bold"
-            android:textAlignment="center"
-            android:layout_gravity="center_vertical"
-            />
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:hint="Convenience Fee(3.8%)"
+                android:padding="2dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center"
+                android:textColorHint="#06429D"
+                />
 
 
+            <TextView
+                android:id="@+id/fee"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:hint="Rs.50000"
+                android:padding="2dp"
+                android:layout_marginRight="20dp"
+                android:textColorHint="#06429D"
+                android:textSize="10dp"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+        </LinearLayout>
 
-    </LinearLayout>
+        <!--<view-->
+        <!--android:layout_width="350dp"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:background="#000000"-->
+        <!--android:layout_gravity="center"-->
+        <!--&gt;</view>-->
 
-    <!--<view-->
-    <!--android:layout_width="350dp"-->
-    <!--android:layout_height="1dp"-->
-    <!--android:layout_marginTop="10dp"-->
-    <!--android:background="#000000"-->
-    <!--android:layout_gravity="center"-->
-    <!--&gt;</view>-->
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center">
-
-        <TextView
-            android:layout_width="160dp"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Convenience Fee(3.8%)"
-            android:padding="2dp"
-            android:layout_marginLeft="20dp"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:layout_gravity="center_vertical"
-            android:textAlignment="center"
-            android:textColorHint="#000000"
-            />
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:hint="GST"
+                android:padding="2dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center"
+                android:textColorHint="#06429D"
+                />
 
 
-        <TextView
-            android:id="@+id/fee"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:hint="Rs.50000"
-            android:padding="2dp"
-            android:layout_marginRight="20dp"
-            android:textColorHint="#000000"
-            android:textSize="18dp"
-            android:layout_gravity="center_vertical"
-            android:textStyle="bold"
-            android:textAlignment="center"/>
-    </LinearLayout>
-
-    <!--<view-->
-    <!--android:layout_width="350dp"-->
-    <!--android:layout_height="1dp"-->
-    <!--android:layout_marginTop="10dp"-->
-    <!--android:background="#000000"-->
-    <!--android:layout_gravity="center"-->
-    <!--&gt;</view>-->
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center">
-
-        <TextView
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:hint="GST"
-            android:padding="2dp"
-            android:layout_marginLeft="20dp"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:layout_gravity="center_vertical"
-            android:textAlignment="center"
-            android:textColorHint="#000000"
-            />
-
-
-        <TextView
-            android:id="@+id/gst"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:hint="Rs.1.4"
-            android:padding="2dp"
-            android:layout_marginRight="20dp"
-            android:textColorHint="#000000"
-            android:textSize="18dp"
-            android:layout_gravity="center_vertical"
-            android:textStyle="bold"
-            android:textAlignment="center"/>
-    </LinearLayout>
+            <TextView
+                android:id="@+id/gst"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:hint="Rs.1.4"
+                android:padding="2dp"
+                android:layout_marginRight="20dp"
+                android:textColorHint="#06429D"
+                android:textSize="10dp"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+        </LinearLayout>
 
 
     </LinearLayout>
 
     <Button
         android:id="@+id/btnPay"
-        android:layout_width="240dp"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:layout_gravity="center"
         android:layout_marginTop="35dp"
         android:background="@drawable/rounded_button"
         android:text="PAY"
         android:textAllCaps="false"
         android:textColor="#ffffff"
-        android:textSize="35dp"
+        android:textSize="20dp"
         android:textStyle="bold"/>
 
 

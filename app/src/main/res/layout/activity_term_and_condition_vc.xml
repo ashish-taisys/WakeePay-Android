@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#7e7b7b"
+    android:background="#ffffff"
     tools:context=".TermAndConditionVC">
 
     <TextView
@@ -14,9 +14,9 @@
         android:layout_marginTop="10dp"
         android:text="@string/your_string"
         android:textAlignment="center"
-        android:textSize="25dp"
+        android:textSize="22dp"
         android:textStyle="bold"
-        android:textColor="#ffffff"
+        android:textColor="#06429D"
         />
 
     <ScrollView
@@ -66,8 +66,8 @@ Payment Refund Policy for Online Payments
 Refund for Charge Back Transaction: In the event there is any claim for/ of charge back by the User for any reason whatsoever, such User shall immediately approach the Institute with his/ her claim details and claim refund from the Institute alone. Such refund (if any) shall be effected only by the Institute via payment gateway or any other means as the Institute deems appropriate. No claims for refund/ charge back shall be made by any User to the Payment Service Provider(s) and in the event such claim is made it shall not be entertained.
 Refund for fraudulent/duplicate transaction(s):  The User shall directly contact the Institute for any fraudulent transaction(s) on account of misuse of Card/ Bank details by a fraudulent individual/party and such issues shall be suitably addressed by the Institute alone in line with their policies and rules.
 "
-            android:textSize="15dp"
-            android:textColor="#ffffff"
+            android:textSize="10dp"
+            android:textColor="#06429D"
             />
 
     </ScrollView>

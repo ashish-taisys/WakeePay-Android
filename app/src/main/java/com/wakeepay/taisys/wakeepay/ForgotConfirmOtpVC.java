@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.json.JSONException;
@@ -17,8 +18,8 @@ import org.json.JSONObject;
 
 public class ForgotConfirmOtpVC extends AppCompatActivity {
     public EditText enterOtp;
-    public Button Submit,resendOtp;
-
+    public Button Submit;
+    public TextView resendOtp;
     ApiClient apiClient = new ApiClient();
     String apiClientResult = "";
     JSONObject resultJsonObj, resultObjJsonObj;
@@ -32,7 +33,7 @@ public class ForgotConfirmOtpVC extends AppCompatActivity {
         setContentView(R.layout.activity_forgot_confirm_otp_vc);
         enterOtp = (EditText) findViewById(R.id.enterOtp);
         Submit = (Button) findViewById(R.id.submit_otp1);
-        resendOtp = (Button) findViewById(R.id.resend_otp1);
+        resendOtp = (TextView) findViewById(R.id.resend_otp1);
 
         Submit.setOnClickListener(new View.OnClickListener() {
             @Override

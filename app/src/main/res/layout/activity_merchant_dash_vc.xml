@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e1d8d8"
+    android:background="#ffffff"
     android:orientation="vertical"
     tools:context=".MerchantDashVC">
 
@@ -13,18 +13,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="#ffffff"
-        android:padding="20dp"
-        android:orientation="vertical"
-        android:src="@drawable/wakeepay_logo" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="#ffffff"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:src="@drawable/wakeepay_logo" />
 
         <ImageButton
             android:id="@+id/logout"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_alignParentRight="true"
             android:layout_marginRight="10dp"
             android:layout_centerInParent="true"
@@ -38,16 +38,16 @@
     <TextView
         android:id="@+id/signUp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="1dp"
         android:layout_gravity="center"
         android:layout_marginBottom="5dp"
-        android:background="#050986"
+        android:background="#ffffff"
         android:padding="5dp"
-        android:text="DASHBOARD"
+        android:text=""
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textColor="#ffffff"
-        android:textSize="30dp"
+        android:textColor="#06429D"
+        android:textSize="35dp"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -77,61 +77,136 @@
     </LinearLayout>
 
 
-    <Button
-        android:id="@+id/payment"
-        android:layout_width="280dp"
-        android:layout_marginTop="50dp"
+    <RelativeLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PAYMENT"
         android:layout_gravity="center"
-        android:textSize="35dp"
-        android:textStyle="bold"
-        android:textColor="#ffffff"
-        android:background="@drawable/rounded_button"
-        android:backgroundTint="#3999d9"
-        />
+        android:layout_marginTop="30dp"
+        >
+
+        <ImageView
+            android:id="@+id/payImage"
+            android:layout_width="100dp"
+            android:layout_height="46dp"
+            android:src="@drawable/payment_icon"
+            />
+
+        <Button
+            android:id="@+id/payment"
+            android:layout_width="180dp"
+            android:layout_height="46dp"
+            android:layout_toEndOf="@+id/payImage"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="PAYMENT"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#06429D"
+            android:layout_toRightOf="@+id/payImage" />
+
+    </RelativeLayout>
 
 
-    <Button
-        android:id="@+id/profile"
-        android:layout_width="280dp"
-        android:layout_marginTop="50dp"
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PROFILE"
         android:layout_gravity="center"
-        android:textSize="35dp"
-        android:textStyle="bold"
-        android:textColor="#ffffff"
-        android:background="@drawable/rounded_button"
-        android:backgroundTint="#3999d9"
-        />
+        android:layout_marginTop="20dp"
+        >
 
-    <Button
-        android:id="@+id/transaction"
-        android:layout_width="280dp"
-        android:layout_marginTop="50dp"
+        <ImageView
+            android:id="@+id/proImage"
+            android:layout_width="100dp"
+            android:layout_height="46dp"
+            android:src="@drawable/profile_icon"
+            />
+
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="180dp"
+            android:layout_height="46dp"
+            android:text="PROFILE"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_toEndOf="@+id/proImage"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#06429D"
+            android:layout_toRightOf="@+id/proImage" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TRANSACTION"
         android:layout_gravity="center"
-        android:textSize="35dp"
-        android:textStyle="bold"
-        android:textColor="#ffffff"
-        android:background="@drawable/rounded_button"
-        android:backgroundTint="#3999d9"/>
+        android:layout_marginTop="20dp"
+        >
 
-    <Button
-        android:id="@+id/qr"
-        android:layout_width="280dp"
-        android:layout_marginTop="50dp"
+        <ImageView
+            android:id="@+id/tranImage"
+            android:layout_width="100dp"
+            android:layout_height="46dp"
+            android:src="@drawable/transactions_icon"
+            />
+
+
+        <Button
+            android:id="@+id/transaction"
+            android:layout_width="180dp"
+            android:layout_height="46dp"
+            android:text="TRANSACTION"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_toEndOf="@+id/tranImage"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#06429D"
+            android:layout_toRightOf="@+id/tranImage" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="QR CODE"
         android:layout_gravity="center"
-        android:textSize="35dp"
-        android:textStyle="bold"
-        android:textColor="#ffffff"
-        android:background="@drawable/rounded_button"
-        android:backgroundTint="#050986"/>
+        android:layout_marginTop="20dp"
+        >
 
+        <ImageView
+            android:id="@+id/qrImage"
+            android:layout_width="100dp"
+            android:layout_height="46dp"
+            android:src="@drawable/qrlogo"
+            />
+
+        <Button
+            android:id="@+id/qr"
+            android:layout_width="180dp"
+            android:layout_height="46dp"
+            android:text="QR CODE"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#06429D"
+            android:layout_toEndOf="@+id/qrImage"
+            android:layout_toRightOf="@+id/qrImage" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/banner2">
+
+    </RelativeLayout>
 
 
 </LinearLayout>

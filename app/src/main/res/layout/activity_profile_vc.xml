@@ -5,11 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#ffffff"
     tools:context=".ProfileVC">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="65dp"
         android:background="#ffffff"
         android:padding="20dp"
         android:src="@drawable/wakeepay_logo" />
@@ -19,13 +20,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="5dp"
-        android:background="#3999d9"
+        android:background="#ffffff"
         android:padding="5dp"
         android:text="PROFILE"
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textColor="#ffffff"
-        android:textSize="30dp"
+        android:textColor="#06429D"
+        android:textSize="22dp"
         android:textStyle="bold" />
 
 
@@ -39,7 +40,8 @@
         android:background="#ffffff"
         android:drawableLeft="@drawable/ic_firstname"
         android:hint="NAME"
-        android:textColorHint="#796868"
+        android:textSize="15dp"
+        android:textColorHint="#06429D"
         android:textColor="#000000"/>
 
     <EditText
@@ -51,20 +53,22 @@
         android:background="#ffffff"
         android:drawableLeft="@drawable/ic_email"
         android:hint="EMAIL ID"
-        android:textColorHint="#796868"
+        android:textSize="15dp"
+        android:textColorHint="#06429D"
         android:textColor="#000000"/>
 
-  <EditText
-    android:id="@+id/mobile"
-    android:layout_width="300dp"
-    android:layout_height="45dp"
-    android:layout_gravity="center"
-    android:layout_marginTop="20dp"
-    android:background="#ffffff"
-    android:drawableLeft="@drawable/ic_phone"
-    android:hint="MOBILE NO."
-      android:textColorHint="#796868"
-      android:textColor="#000000"/>
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/ic_phone"
+        android:hint="MOBILE NO."
+        android:textSize="15dp"
+        android:textColorHint="#06429D"
+        android:textColor="#000000"/>
 
     <EditText
         android:id="@+id/dob"
@@ -75,21 +79,24 @@
         android:background="#ffffff"
         android:drawableLeft="@drawable/ic_calendar"
         android:hint="DOB"
-        android:textColorHint="#796868"
+        android:textSize="15dp"
+        android:textColorHint="#06429D"
         android:textColor="#000000"
         android:focusable="false"/>
 
     <Button
         android:id="@+id/update"
-        android:layout_width="240dp"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
         android:background="@drawable/rounded_button"
         android:text="UPDATE"
         android:textAllCaps="false"
         android:textColor="#ffffff"
-        android:textSize="35dp"
+        android:textSize="20dp"
         android:textStyle="bold" />
 
 

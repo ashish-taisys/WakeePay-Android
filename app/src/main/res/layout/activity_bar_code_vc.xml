@@ -13,27 +13,27 @@
         android:orientation="vertical"
         android:background="#b1e0e2">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="#ffffff"
-        android:padding="20dp"
-        android:src="@drawable/wakeepay_logo" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="#ffffff"
+            android:padding="20dp"
+            android:src="@drawable/wakeepay_logo" />
 
-    <TextView
-        android:id="@+id/login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="0dp"
-        android:background="#3999d9"
-        android:padding="5dp"
-        android:text="Scan QR"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textColor="#ffffff"
-        android:textSize="30dp"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:background="#ffffff"
+            android:padding="5dp"
+            android:text="Scan QR"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#06429D"
+            android:textSize="22dp"
+            android:textStyle="bold" />
 
         <SurfaceView
             android:id="@+id/camera"
@@ -58,15 +58,17 @@
 
         <Button
             android:id="@+id/btnSubmit"
-            android:layout_width="240dp"
-            android:layout_height="wrap_content"
+            android:layout_width="180dp"
+            android:layout_height="42dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
             android:layout_gravity="center"
             android:layout_marginTop="25dp"
             android:background="@drawable/rounded_button"
             android:text="SUBMIT"
             android:textAllCaps="false"
             android:textColor="#ffffff"
-            android:textSize="35dp"
+            android:textSize="20dp"
             android:textStyle="bold" />
 
 

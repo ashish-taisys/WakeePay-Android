@@ -176,43 +176,43 @@ public class AmountDetailVC extends Activity implements PaymentResultListener {
     @SuppressWarnings("unused")
     @Override
     public void onPaymentSuccess(String razorpayPaymentID) {
-        try {
+//        try {
             apiClientResult = apiClient.updateTransaction(prefillContact, transactionId, "SUCCESS", razorpayPaymentID,sharedpreferences.getString("MerchantId", null));
             //Toast.makeText(this, "RazorPay Payment Successful: " + razorpayPaymentID, Toast.LENGTH_SHORT).show();
-            if(apiClientResult.equals("Internal Server Error")) {
-                Toast.makeText(getApplicationContext(), "Error updating transaction: Please try again!", Toast.LENGTH_LONG).show();
-            } else {
+//            if(apiClientResult.equals("Internal Server Error")) {
+//                Toast.makeText(getApplicationContext(), "Error updating transaction: Please try again!", Toast.LENGTH_LONG).show();
+//            } else {
                 Intent intent = new Intent(AmountDetailVC.this, PaymentSuccess.class);
                 intent.putExtra("razorpayPaymentID", razorpayPaymentID.toString());
                 intent.putExtra("amountPaid", String.valueOf(total));
                 intent.putExtra("transactionDate", String.valueOf(dateFormat.format(new Date())));
                 startActivity(intent);
                 finish();
-            }
-        } catch (Exception e) {
-            Log.e("", "Exception in onPaymentSuccess", e);
-        }
+//            }
+//        } catch (Exception e) {
+//            Log.e("", "Exception in onPaymentSuccess", e);
+//        }
     }
 
     @SuppressWarnings("unused")
     @Override
     public void onPaymentError(int code, String response) {
-        try {
+//        try {
             apiClientResult = apiClient.updateTransaction(prefillContact, transactionId,
                     "FAILED", "",sharedpreferences.getString("MerchantId", null));
             //Toast.makeText(this, "RazorPay Payment failed: " + code + " " + response, Toast.LENGTH_SHORT).show();
-            if(apiClientResult.equals("Internal Server Error")) {
-                Toast.makeText(getApplicationContext(), "Error updating transaction: Please try again!", Toast.LENGTH_LONG).show();
-            } else {
+//            if(apiClientResult.equals("Internal Server Error")) {
+//                Toast.makeText(getApplicationContext(), "Error updating transaction: Please try again!", Toast.LENGTH_LONG).show();
+//            } else {
                 Intent intent = new Intent(AmountDetailVC.this, PaymentError.class);
                 intent.putExtra("errorCode", String.valueOf(code));
                 intent.putExtra("errorMessage", response);
                 startActivity(intent);
                 finish();
-            }
-        } catch (Exception e) {
-            Log.e("", "Exception in onPaymentError", e);
-        }
+//            }
+//        } catch (Exception e) {
+//            Log.e("", "Exception in onPaymentError", e);
+//        }
     }
 
     public String generateTransactionID(String prefix) throws Exception {

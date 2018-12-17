@@ -16,6 +16,7 @@ import android.view.Window;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.json.JSONArray;
@@ -24,7 +25,8 @@ import org.json.JSONObject;
 
 public class LoginVC extends Activity {
     public  EditText email,mobile,password;
-    public Button forgotpassword,Submit;
+    public Button Submit;
+    public TextView forgotpassword;
     public Button SignUp;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     String mobileNoPattern = "^[0-9]{10}$";
@@ -85,7 +87,7 @@ public class LoginVC extends Activity {
         mobile = (EditText) findViewById(R.id.mobile);
         password = (EditText) findViewById(R.id.password);
         Submit = (Button) findViewById(R.id.btnlogin);
-        forgotpassword = (Button) findViewById(R.id.btnForgotPswrd);
+        forgotpassword = (TextView) findViewById(R.id.btnForgotPswrd);
         Submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -107,12 +109,14 @@ public class LoginVC extends Activity {
     public void Submit()
     {
         try {
-        if (!email.getText().toString().trim().matches(emailPattern)) {
-            Toast.makeText(getApplicationContext(), "Please provide a valid email address", Toast.LENGTH_SHORT).show();
-        } else if (!mobile.getText().toString().trim().matches(mobileNoPattern)) {
-            Toast.makeText(getApplicationContext(), "Please provide a valid mobile number", Toast.LENGTH_SHORT).show();
-            return;
-        } else if (password.getText().toString().matches("")) {
+//        if (!email.getText().toString().trim().matches(emailPattern)) {
+//            Toast.makeText(getApplicationContext(), "Please provide a valid email address", Toast.LENGTH_SHORT).show();
+//        } else if (!mobile.getText().toString().trim().matches(mobileNoPattern)) {
+//            Toast.makeText(getApplicationContext(), "Please enter the 10 digits mobile number", Toast.LENGTH_SHORT).show();
+//            return;
+//        } else
+
+            if (password.getText().toString().matches("")) {
             Toast.makeText(this, "Please enter the password", Toast.LENGTH_SHORT).show();
             return;
         }

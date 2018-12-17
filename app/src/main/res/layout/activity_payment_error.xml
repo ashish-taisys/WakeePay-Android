@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     android:orientation="vertical"
     tools:context=".PaymentError">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="65dp"
         android:background="#ffffff"
         android:padding="20dp"
         android:src="@drawable/wakeepay_logo" />
@@ -20,13 +21,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="5dp"
-        android:background="#3999d9"
+        android:background="#ffffff"
         android:padding="5dp"
         android:text="PAYMENT FAILED"
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textColor="#ffffff"
-        android:textSize="30dp"
+        android:textColor="#06429D"
+        android:textSize="22dp"
         android:textStyle="bold" />
 
     <ImageView
@@ -44,8 +45,8 @@
         android:text="Sorry! Your transaction could not be processed. \n Below are the error details:"
         android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
-        android:textColor="#000000"
-        android:textSize="18dp"
+        android:textColor="#06429D"
+        android:textSize="15dp"
         android:textStyle="bold"
         android:textAlignment="center"
         />
@@ -66,7 +67,7 @@
             android:textSize="15dp"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="15dp"
-            android:textColor="#000000"
+            android:textColor="#06429D"
             android:textStyle="bold"/>
 
         <TextView
@@ -81,7 +82,7 @@
             android:textAlignment="center"
             android:layout_alignParentRight="true"
             android:layout_marginRight="15dp"
-            android:textColor="#000000"/>
+            android:textColor="#06429D"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -100,7 +101,7 @@
             android:textSize="15dp"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="15dp"
-            android:textColor="#000000"
+            android:textColor="#06429D"
             android:textStyle="bold"/>
 
         <TextView
@@ -115,20 +116,22 @@
             android:textAlignment="center"
             android:layout_alignParentRight="true"
             android:layout_marginRight="15dp"
-            android:textColor="#000000"/>
+            android:textColor="#06429D"/>
 
     </RelativeLayout>
 
 
     <Button
         android:id="@+id/btnHome"
-        android:layout_width="280dp"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:text="GO TO HOME"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
         android:background="@drawable/rounded_button"
-        android:textSize="35dp"
+        android:textSize="20dp"
         android:textStyle="bold"
         android:textColor="#ffffff"
         />

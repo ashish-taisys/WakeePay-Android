@@ -5,11 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#ffffff"
     tools:context=".ProfileVC">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="65dp"
         android:background="#ffffff"
         android:padding="20dp"
         android:src="@drawable/wakeepay_logo" />
@@ -19,156 +20,168 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="5dp"
-        android:background="#3999d9"
+        android:background="#ffffff"
         android:padding="5dp"
         android:text="PROFILE"
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textColor="#ffffff"
-        android:textSize="30dp"
+        android:textColor="#06429D"
+        android:textSize="22dp"
         android:textStyle="bold" />
 
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="20dp">
+        android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/name"
-            android:layout_width="300dp"
-            android:layout_height="45dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="#ffffff"
-            android:drawableLeft="@drawable/ic_firstname"
-            android:hint="NAME"
-            android:textColorHint="#796868"
-            android:textColor="#000000"
-            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
 
-        <EditText
-            android:id="@+id/email"
-            android:layout_width="300dp"
-            android:layout_height="45dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="#ffffff"
-            android:drawableLeft="@drawable/ic_email"
-            android:hint="EMAIL ID"
-            android:inputType="textEmailAddress"
-            android:textColorHint="#796868"
-            android:textColor="#000000"
-            />
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/ic_firstname"
+                android:hint="NAME"
+                android:textSize="15dp"
+                android:textColorHint="#06429D"
+                android:textColor="#000000"
+                />
 
-        <EditText
-            android:id="@+id/mobile"
-            android:layout_width="300dp"
-            android:layout_height="45dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="#ffffff"
-            android:drawableLeft="@drawable/ic_phone"
-            android:hint="MOBILE NO."
-            android:inputType="phone"
-            android:textColorHint="#796868"
-            android:textColor="#000000"/>
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/ic_email"
+                android:hint="EMAIL ID"
+                android:textSize="15dp"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#06429D"
+                android:textColor="#000000"
+                />
 
-        <EditText
-            android:id="@+id/dob"
-            android:layout_width="300dp"
-            android:layout_height="45dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="#ffffff"
-            android:drawableLeft="@drawable/ic_calendar"
-            android:ems="10"
-            android:focusable="false"
-            android:hint="DOB"
-            android:inputType="date"
-            android:textColorHint="#796868"
-            android:textColor="#000000" />
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/ic_phone"
+                android:hint="MOBILE NO."
+                android:inputType="phone"
+                android:textColorHint="#06429D"
+                android:textColor="#000000"/>
 
-        <EditText
-            android:id="@+id/accountno"
-            android:layout_width="300dp"
-            android:layout_height="45dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="#ffffff"
-            android:drawableLeft="@drawable/ic_calendar"
-            android:hint="ACCOUNT NUMBER"
-            android:inputType="number"
-            android:textColorHint="#796868"
-            android:textColor="#000000"/>
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/ic_calendar"
+                android:ems="10"
+                android:textSize="15dp"
+                android:focusable="false"
+                android:hint="DOB"
+                android:inputType="date"
+                android:textColorHint="#06429D"
+                android:textColor="#000000" />
 
-        <EditText
-            android:id="@+id/ifsc"
-            android:layout_width="300dp"
-            android:layout_height="45dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="#ffffff"
-            android:drawableLeft="@drawable/ic_calendar"
-            android:hint="IFSC"
-            android:textColorHint="#796868"
-            android:textColor="#000000"/>
+            <EditText
+                android:id="@+id/accountno"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/ic_calendar"
+                android:hint="ACCOUNT NUMBER"
+                android:inputType="number"
+                android:textColorHint="#06429D"
+                android:textColor="#000000"/>
 
-        <EditText
-            android:id="@+id/accounttype"
-            android:layout_width="300dp"
-            android:layout_height="45dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="#ffffff"
-            android:drawableLeft="@drawable/ic_calendar"
-            android:focusable="false"
-            android:hint="ACCOUNT TYPE"
-            android:textColorHint="#796868"
-            android:textColor="#000000"/>
+            <EditText
+                android:id="@+id/ifsc"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/ic_calendar"
+                android:hint="IFSC"
+                android:textSize="15dp"
+                android:textColorHint="#06429D"
+                android:textColor="#000000"/>
 
-        <EditText
-            android:id="@+id/institution"
-            android:layout_width="300dp"
-            android:layout_height="45dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="#ffffff"
-            android:drawableLeft="@drawable/ic_calendar"
-            android:hint="INSTITUTION NAME"
-            android:textColorHint="#796868"
-            android:textColor="#000000"/>
+            <EditText
+                android:id="@+id/accounttype"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/ic_calendar"
+                android:focusable="false"
+                android:textSize="15dp"
+                android:hint="ACCOUNT TYPE"
+                android:textColorHint="#06429D"
+                android:textColor="#000000"/>
 
-        <EditText
-            android:id="@+id/gstNo"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="#ffffff"
-            android:drawableLeft="@drawable/ic_calendar"
-            android:hint="GST No.(If Any)"
-            android:textColorHint="#796868"
-            android:textColor="#000000"/>
+            <EditText
+                android:id="@+id/institution"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/ic_calendar"
+                android:hint="INSTITUTION NAME"
+                android:textSize="15dp"
+                android:textColorHint="#06429D"
+                android:textColor="#000000"/>
 
-        <Button
-            android:id="@+id/update"
-            android:layout_width="240dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="40dp"
-            android:background="@drawable/rounded_button"
-            android:text="UPDATE"
-            android:textAllCaps="false"
-            android:textColor="#ffffff"
-            android:textSize="35dp"
-            android:textStyle="bold" />
+            <EditText
+                android:id="@+id/gstNo"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/ic_calendar"
+                android:hint="GST No.(If Any)"
+                android:textColorHint="#06429D"
+                android:textColor="#000000"/>
 
-    </LinearLayout>
-</ScrollView>
+            <Button
+                android:id="@+id/update"
+                android:layout_width="180dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+
+                android:background="@drawable/rounded_button"
+                android:text="UPDATE"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
